@@ -1,0 +1,56 @@
+/* General styles */
+
+@use './variables' as *;
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-color: $portage $magnolia;
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        border-radius: 5px;
+        background-color: $magnolia;
+        margin: 2px 0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: $portage;
+    }
+}
+
+body {
+    font-family: 'Fira Code', monospace;
+    font-weight: 700;
+    overflow-x: hidden;
+
+    background-image: url('../assets/svg/grey-lines-bg.svg');
+    background-size: cover;
+    background-attachment: fixed;
+
+    @media (max-width: 767px) {
+        background-attachment: initial;
+        background-image: none;
+        background-color: $grey-15;
+    }
+}
+
+main {
+    min-height: calc(100vh - 60px - 60px);
+}
+
+footer {
+    height: 60px;
+    background-image: linear-gradient(to left, $grey-5, $grey-15, $grey-5);
+    color: $magnolia;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    position: relative;
+}

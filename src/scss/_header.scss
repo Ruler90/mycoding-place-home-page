@@ -1,0 +1,42 @@
+/* Header styles */
+
+@use './variables'as *;
+
+.mcp-header {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 120px 32px 16px;
+    color: $magnolia;
+    line-height: 1.5;
+
+    @media (max-width: 800px) {
+        padding: 48px 16px 0;
+    }
+}
+
+.mcp-header__text {
+    margin: 0 0 32px;
+    font-size: 64px;
+    color: $perfume;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media (max-width: 1200px) {
+        font-size: 48px;
+    }
+
+    @media (max-width: 550px) {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+}
+
+.mcp-header__tags-logo {
+    height: 120px;
+    display: block;
+    margin: 0 auto;
+
+    @media (max-width: 550px) {
+        height: 60px;
+    }
+}

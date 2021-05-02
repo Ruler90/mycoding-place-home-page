@@ -1,0 +1,40 @@
+@use './variables'as *;
+
+.mcp-nav {
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.mcp-nav__items {
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.mcp-nav__item {
+    margin: 0 16px;
+
+    &:last-child {
+        margin-left: auto;
+    }
+}
+
+.mcp-nav__link {
+    color: $perfume;
+    font-size: 16px;
+
+    &:hover,
+    &:focus {
+        color: $magnolia;
+    }
+
+    &--inactive {
+        pointer-events: none;
+        color: #8484ad;
+    }
+}
