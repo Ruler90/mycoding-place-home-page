@@ -42,7 +42,18 @@ body {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     min-height: calc(100vh - 60px - 60px);
+}
+
+.mcp-irrelevant-text {
+    max-width: max-content;
+    margin: auto auto 16px;
+    padding: 16px;
+    color: $white;
+    font-size: 14px;
+    text-align: center;
 }
 
 footer {
